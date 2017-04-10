@@ -57,7 +57,7 @@ MatrixXd Tools::CalculateJacobian(const VectorXd& x_state) {
   float px2_plus_py2_sqrt_cube = pow(px2_plus_py2_sqrt, 3);
 	//check division by zero
 	if (px2_plus_py2 == 0) {
-	  std::cout << "Error, divide by 0 !";
+	  std::cout << "divide by 0 !, keeping Hj\n";
 	  return Hj;
 	}
 	else{
